@@ -1,0 +1,11 @@
+
+<view class="main-container">
+ <view src="pages/welcome/welcome1.wxml"> </view>
+  <view class="bottom-content">
+    <image class="image-show"  src="image/welcome_center.png"></image>
+    <view bindtap="next" class="welcome-footer">
+      <image class="connect-gb-image" mode="aspectFit" src="image/connect_gb_image.png"></image>
+    </view>
+  </view>
+
+</view>

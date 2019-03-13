@@ -1,0 +1,15 @@
+<view class="welcome-container">
+    <view class="welcome-header">
+      <image class="header-bg" mode="scaleToFill" src="image/header_bg2.jpg"></image>
+      <view class="header-bottom">
+             <view class="header-bottom-left">
+                <image class="header-icon" mode="aspectFit" src="image/header.jpg"></image>
+                <text>{{name}}</text>
+                <text>{{sex}}</text>
+                <text>{{age}}岁</text>
+            </view>
+      </view>
+    </view> 
+    <view class="welcome-content">
+    </view>
+</view>

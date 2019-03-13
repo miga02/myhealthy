@@ -1,0 +1,76 @@
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    font-family: "Microsoft YaHei";
+    font-size: 30rpx;
+    color: #343434;
+    height: 30vh;
+    background: #ffffff;
+}
+.welcome-header {
+    height:25vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+    
+}
+.header-bg {
+    height: 25vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+}
+.welcome-content {
+    /* margin-top: 8rpx; */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #edfcff;
+    height: 5vh;
+    
+}
+.header-bottom {
+    height: 8vh;
+    width: 85vw;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    /* box-shadow: 0rpx 8rpx 0rpx 0rpx rgba(230,230,230,1); */
+    border-radius: 35px 35px;
+    position: absolute;
+    z-index: 1;
+    margin-top: 4vh; 
+}
+
+.header-bottom-left {
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 32rpx;
+}
+
+.header-bottom-left text {
+    margin: 0 16rpx;
+}
+.header-icon {
+    height: 48rpx;
+    width: 48rpx;
+    border-radius: 50%;
+}
+
+.header-bottom-right {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 16rpx;
+}
+
+.header-bottom-right text {
+    margin: 0 16rpx;
+}
+
