@@ -1,0 +1,180 @@
+@-webkit-keyframes mykeyFrames {
+    0% {
+        opacity: 0;
+    }
+
+    12% {
+        opacity: 0.12;
+    }
+
+    24% {
+        opacity: 0.36;
+    }
+
+    20% {
+        opacity: 0.56;
+    }
+
+    24% {
+        opacity: 0.67;
+    }
+
+    28% {
+        opacity: 0.73;
+    }
+
+    36% {
+        opacity: 0.85;
+    }
+
+    40% {
+        opacity: 0.97;
+    }
+
+    48% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.97;
+    }
+
+    56% {
+        opacity: 0.85;
+    }
+
+    60% {
+        opacity: 0.73;
+    }
+
+    68% {
+        opacity: 0.67;
+    }
+
+    78% {
+        opacity: 0.56;
+    }
+
+    88% {
+        opacity: 0.36;
+    }
+
+    89% {
+        opacity: 0.12;
+    }
+
+    96% {
+        opacity: 0.08;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.bg {
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    position: fixed;
+}
+
+.updatecheck-container {
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.updatecheck-head {
+    width: 100vw;
+    background-size: 100%,100%;
+    text-align: center;
+}
+
+.updatecheck-head image {
+    display: block;
+    margin: 50rpx auto;
+    width: 510rpx;
+    height: 240rpx;
+    background: transparent;
+}
+
+.updatecheck-content {
+    overflow-y: scroll;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.content-circle {
+    width: 416rpx;
+    height: 426rpx;
+    position: relative;
+}
+
+.under-circle {
+    width: 416rpx;
+    height: 416rpx;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.up-circle {
+    width: 256rpx;
+    height: 257rpx;
+    position: absolute;
+    left: 80rpx;
+    top: 76rpx;
+    opacity: 0;
+    animation: mykeyFrames 1.5s infinite;
+}
+
+.up-circle-hide {
+    display: none;
+}
+
+.up_info {
+    width: 220rpx;
+    height: 220rpx;
+    position: absolute;
+    left: 100rpx;
+    top: 96rpx;
+    border-radius: 50%;
+    z-index: 40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.up_info_title {
+    font-size: 46rpx;
+    font-weight: bold;
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+
+#btn-re-upload {
+    width: 275rpx;
+    height: 75rpx;
+    position: absolute;
+    text-align: center;
+    top: 800rpx;
+}
+
+#btn-re-check {
+    width: 275rpx;
+    height: 75rpx;
+    position: absolute;
+    text-align: center;
+    top: 900rpx;
+    line-height: 80rpx;
+}

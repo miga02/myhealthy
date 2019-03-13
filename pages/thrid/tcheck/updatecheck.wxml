@@ -1,0 +1,21 @@
+<view>
+    <image class="bg" mode="scaleToFill" src="../../bluetooth/image/bg.jpg"></image>
+    <view class="updatecheck-container">
+        <view class="updatecheck-head">
+            <image mode="widthFix" src="image/updatecheck_title2.png"></image>
+        </view>
+        <view class="updatecheck-content">
+            <view class="content-circle">
+                <image class="under-circle" src="image/under_circle.png"></image>
+                <image class="up-circle" src="image/up_circle.png"></image>
+                <view bindtap="getCheckResult" class="up_info">
+                    <text class="up_info_title" wx:if="{{isUpLoadOk==0}}">数据正在分析中...</text>
+                    <text class="up_info_title" wx:elif="{{isUpLoadOk==1}}">查看报告</text>
+                    <text class="up_info_title" wx:else>网络异常上传失败</text>
+                </view>
+            </view>
+            <image bindtap="reUpload" id="btn-re-upload" src="image/reUpload.png" wx:if="{{isUpLoadOk!=0&&isUpLoadOk!=1}}"></image>
+            <image bindtap="reCheck" id="btn-re-check" src="image/reCheck.png" wx:if="{{isUpLoadOk!=0&&isUpLoadOk!=1}}"></image>
+        </view>
+    </view>
+</view>

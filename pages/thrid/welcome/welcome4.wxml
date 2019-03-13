@@ -1,0 +1,34 @@
+<view class="welcome-container">
+    <view class="welcome-header">
+        <image class="header-bg" mode="scaleToFill" src="../../welcome/image/header_bg2.jpg"></image>
+        <view class="header-bottom">
+            <view class="header-bottom-left">
+                <image class="header-icon" mode="aspectFit" src="../../welcome/image/header.jpg"></image>
+                <text>{{name}}</text>
+                <text>{{sex}}</text>
+                <text>{{age}}岁</text>
+            </view>
+            <view bindtap="goHistory" class="header-bottom-right">
+                <image class="header-icon" mode="aspectFit" src="../../welcome/image/info.jpg"></image>
+                <text>健康档案</text>
+            </view>
+        </view>
+    </view>
+    <view class="welcome-content">
+        <view class="content-iamge">
+            <view class="image-content">
+                <image class="image-show" mode="aspectFit" src="image/image4.png"></image>
+                <image class="content-zhaopin" mode="aspectFit" src="image/zhaopian3.jpg"></image>
+            </view>
+        </view>
+        <view class="content-message">
+            <text>1.保持手机与检测仪间距30厘米，保证信号稳定</text>
+            <text>2.检测前摘下身上所有金属物品和通讯器材</text>
+            <text>3.激烈运动后，空腹或饭后，间隔1小时检测</text>
+            <text>4.检测过程中请保持身心放松，不说话不移动</text>
+        </view>
+    </view>
+    <view bindtap="startCheck" class="welcome-footer">
+        <image class="connect-gb-image" mode="aspectFit" src="image/connect_gb_image4.png"></image>
+    </view>
+</view>

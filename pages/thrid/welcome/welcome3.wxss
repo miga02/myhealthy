@@ -1,0 +1,122 @@
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    font-family: "Microsoft YaHei";
+    font-size: 30rpx;
+    color: #343434;
+    height: 100vh;
+}
+
+.welcome-header {
+    height: 335rpx;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.header-bg {
+    height: 256rpx;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+}
+
+.header-bottom {
+    height: 72rpx;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background: rgba(255,255,255,0.4);
+    box-shadow: 0rpx 8rpx 0rpx 0rpx rgba(230,230,230,1);
+}
+
+.header-bottom-left {
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 32rpx;
+}
+
+.header-bottom-left text {
+    margin: 0 16rpx;
+}
+
+.header-icon {
+    height: 48rpx;
+    width: 48rpx;
+    border-radius: 50%;
+}
+
+.header-bottom-right {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 16rpx;
+}
+
+.header-bottom-right text {
+    margin: 0 16rpx;
+}
+
+.welcome-content {
+    margin-top: 8rpx;
+    flex-grow: 1;
+    background: #f0f1f3;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-iamge {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.image-show {
+    margin-top: 35rpx;
+    height: 500rpx;
+    width: 500rpx;
+}
+
+.content-message {
+    height: 100rpx;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 36rpx;
+}
+
+.content-message text {
+    display: block;
+    color: gray;
+    text-align: center;
+}
+
+.welcome-footer {
+    width: 100vw;
+    height: 240rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f1f3;
+}
+
+.footer-connect {
+    width: 470rpx;
+    height: 110rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect-gb-image {
+    width: 497rpx;
+    height: 110rpx;
+    order: 10;
+    z-index: 1;
+}

@@ -1,13 +1,14 @@
 {
-  "pages":[
+  "pages": [
+    "pages/bluetooth/sreachbluetooth1",
     "pages/welcome/welcome1",
     "pages/welcome/welcome",
     "pages/index/index"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   }
 }

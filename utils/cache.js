@@ -1,0 +1,20 @@
+module.exports = {
+    id_key: "id_key",
+    name_key: "name_key",
+    pass_key: "pass_key",
+    sex_key: "sex_key",
+    age_key: "age_key",
+    weight_key: "weight_key",
+    s_key: "s_key",
+    result_key: "checkresult",
+    prescription_key: "prescriptionDetail",
+    userupdatainfo_key: "userupdatainfo",
+    usercheckValue: "usercheckValue",
+    prescription_name: "prescriptionname",
+    prescription_index: "prescriptionindex",
+    vedio_player_key: "vedioplayerkey",
+    audio_player_key: "audioplayerkey",
+    check_state: "check_state",
+    check_result: "check_result",
+    confirmation_success_key: "confirmationsuccesskey"
+};

@@ -1,0 +1,65 @@
+<view class="main-container">
+  <include src="../welcome/welcome.wxml" />
+
+  <view class="bottom-content">
+    <view class="sblue-head">
+      <view>
+        <view class="pull-down">1.请打开手机蓝牙和设备电源</view>
+        <view class="pull-down">2.请选择对应的蓝牙设备</view>
+      </view>
+    </view>
+
+    <view class="sblue-container">
+      <view class="content_side">
+      
+      <view class="sblue-content">
+            <view class="sblue-list" wx:if="{{devices.length>0}}">
+                <block wx:for="{{devices}}" wx:for-item="device" wx:key="unique">
+                    <view bindtap="connectTo" class="sblue-item-selected" data-deviceId="{{device.deviceId}}" data-deviceName="{{device.deviceName}}" data-id="{{device.id}}" wx:if="{{device.id==currentId}}">
+                        <image mode="aspectFit" src="image/bluetooth.png"></image>
+                        <text class="bluetooth-title">{{device.deviceName}}
+{{device.deviceId}}</text>
+                        <text class="sblue-connect">{{device.isConnect}}</text>
+                        <view class="next"></view>
+                    </view>
+                    <view bindtap="connectTo" class="sblue-item" data-deviceId="{{device.deviceId}}" data-deviceName="{{device.deviceName}}" data-id="{{device.id}}" wx:else>
+                        <image mode="aspectFit" src="image/bluetooth.png"></image>
+                        <text class="bluetooth-title">{{device.deviceName}}
+{{device.deviceId}}</text>
+                        <text class="sblue-connect">{{device.isConnect}}</text>
+                        <view class="next"></view>
+                    </view>
+                </block>
+            </view>
+            <view wx:else></view>
+        </view>
+        <view class="sblue-content_bottom">
+          <view class="content_bottom_left" bindtap="onPullDownRefresh" >
+           <view class="content_bottom_left_in">
+            <image src="image/scan.png"></image>
+            <view> 扫描</view>
+            </view>
+          </view>
+           <view class="line"></view>
+          <view class="content_bottom_left" bindtap="onPullDownRefresh">
+          <view class="content_bottom_left_in">
+            <image src="image/help.png"></image>
+              <view> 帮助</view>
+             </view>
+          </view>
+
+        </view>
+      </view>
+    </view>
+
+
+    <view class="sblue-bottom">
+      <view>
+        <view class="bottom_pull-down">温馨提示:</view>
+        <view class="bottom_pull-down1"> 绑定设备的时候请确保跟其它同类设备保持50米以上的距离,同时观察连接蓝牙后s是否本设备的灯点亮,确定正确绑定对应的设备</view>
+      </view>
+    </view>
+
+
+  </view>
+</view>

@@ -1,0 +1,43 @@
+<view animation="{{animationData}}" class="check-container">
+    <image class="bg" mode="scaleToFill" src="image/check-bg.png"></image>
+    <view class="check-content">
+        <view class="check-showing">
+            <view class="check-head">
+                <view class="check-tooch-info">
+                    <view class="check-tooch-image ">
+                        <view class="image-check">
+                            <view class="images">
+                                <image hidden="{{imageUrl!='a'?true:false}}" mode="aspectFit" src="image/a.png"></image>
+                                <image hidden="{{imageUrl!='1'?true:false}}" mode="aspectFit" src="image/1.png"></image>
+                                <image hidden="{{imageUrl!='2'?true:false}}" mode="aspectFit" src="image/2.png"></image>
+                                <image hidden="{{imageUrl!='3'?true:false}}" mode="aspectFit" src="image/3.png"></image>
+                                <image hidden="{{imageUrl!='4'?true:false}}" mode="aspectFit" src="image/4.png"></image>
+                                <image hidden="{{imageUrl!='5'?true:false}}" mode="aspectFit" src="image/5.png"></image>
+                                <image hidden="{{imageUrl!='6'?true:false}}" mode="aspectFit" src="image/6.png"></image>
+                                <image hidden="{{imageUrl!='7'?true:false}}" mode="aspectFit" src="image/7.png"></image>
+                                <image hidden="{{imageUrl!='8'?true:false}}" mode="aspectFit" src="image/8.png"></image>
+                                <image hidden="{{imageUrl!='9'?true:false}}" mode="aspectFit" src="image/9.png"></image>
+                                <image hidden="{{imageUrl!='10'?true:false}}" mode="aspectFit" src="image/10.png"></image>
+                                <image hidden="{{imageUrl!='0a'?true:false}}" mode="aspectFit" src="image/0a.png"></image>
+                            </view>
+                            <view class="check-progress">
+                                <canvas canvasId="progressCanvas" class="progress-circle" style="width:200px; height:200px;">
+                                    <cover-view></cover-view>
+                                </canvas>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="check-content-operation">
+                <view class="check-content-info">
+                    <view class="check-tooch-state" hidden="{{checkStart}}">{{state}}</view>
+                    <view class="check-tooch-label" hidden="{{!checkStart||checkinfo===''}}">检测中：{{checkinfo}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="check-footer">
+        <video autoplay="{{true}}" controls="{{false}}" id="myVideo" loop="{{true}}" showPlayBtn="{{false}}" src="{{playerurl}}" style="width: 100vw;height:426rpx;position: fixed;bottom: 0;"></video>
+    </view>
+</view>

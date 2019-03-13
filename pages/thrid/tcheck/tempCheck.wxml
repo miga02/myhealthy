@@ -1,0 +1,32 @@
+<view style="height:{{winHeight}}px;">
+    <view class="welcome-container">
+        <view class="welcome-header">
+            <image class="header-bg" mode="scaleToFill" src="../../welcome/image/header_bg2.jpg"></image>
+            <view class="header-bottom">
+                <view class="header-bottom-left">
+                    <image class="header-icon" mode="aspectFit" src="../../welcome/image/header.jpg"></image>
+                    <text>{{name}}</text>
+                    <text>{{sex}}</text>
+                    <text>{{age}}岁</text>
+                </view>
+                <view bindtap="goHistory" class="header-bottom-right">
+                    <image class="header-icon" mode="aspectFit" src="../../welcome/image/info.jpg"></image>
+                    <text>健康档案</text>
+                </view>
+            </view>
+        </view>
+        <view class="">
+            <view class="welcome-content">
+                <text class="content-title">您的数据即将介入 “生命慧眼” 健康大数据库进行分析评定。</text>
+                <text class="content-one">“生命慧眼 ”集中国科学院、中国中医科学院、中国人民大学健康管理学院、美国波士顿大学医学院、美国底特律大学健康学院等国内外诸多研究与应用单位的一流专家团队参与设计研发、联手打造的科技成果实施项目。 </text>
+                <text class="content-two"> 参与国家十一五、十二五国家课题，参与并列入科技部、国家中医药管理局“国家十二五科技支撑计划-中医预防保健（治未病）规范及技术标准制定”与健康管理适宜技术规范标准化课题，并已于2015年中国健康服务业研究报告中正式发布。</text>
+            </view>
+            <view class="welcome-footer">
+                <view class="footer-content">
+                    <image bindtap="uploadData" class="connect-gb-image" mode="aspectFit" src="image/connect_gb_image5.png"></image>
+                    <image bindtap="resetTest" class="connect-gb-image cancel" mode="aspectFit" src="image/connect_gb_image6.png"></image>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

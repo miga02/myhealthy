@@ -1,0 +1,78 @@
+<view style="height:{{winHeight}}px;">
+    <view class="welcome-container">
+        <view class="welcome-header">
+            <image class="header-bg" mode="scaleToFill" src="image/baogaodan_bg3.png"></image>
+            <view class="header-bottom">
+                <view class="header-bottom-left">
+                    <image class="header-icon" mode="aspectFit" src="image/baogao_fucha.png"></image>
+                    <text>基于您目前的身体状况，建议您{{nexttime}}复查</text>
+                </view>
+            </view>
+            <view class="header-top">
+                <view class="header-bottom-left">
+                    <image class="header-icon" mode="aspectFit" src="image/baogao_time.png"></image>
+                    <text>{{datatime}}</text>
+                </view>
+                <view bindtap="goHistory" class="header-bottom-right">
+                    <image class="header-icon" mode="aspectFit" src="image/baogao_jilu.png"></image>
+                    <text>健康档案</text>
+                </view>
+            </view>
+            <view class="header-so">
+                <view class="header-so-score">{{stateScore}}</view>
+                <view class="header-so-title">健康总分</view>
+            </view>
+        </view>
+        <view class="">
+            <view class="welcome-content">
+                <view class="checkresult-header">
+                    <view class="header-title">
+                        <text>亲爱的 </text>
+                        <text class="bold" wx:if="{{userSex==2}}">{{userName}}女士</text>
+                        <text class="bold" wx:else>{{userName}}先生</text>
+                        <text> 您好！</text>
+                    </view>
+                </view>
+                <view class="content-info">
+                    <view>感谢您使用“守握健康”智能健康仪进行亚健康评估。如您是初次使用，请阅读
+            <navigator class="nav-readme" hoverClass="other-navigator-hover" openType="navigate" url="readme1">《用户须知》</navigator>。现将您的评估结果汇总分析如下，请您认真阅读。</view>
+                    <view>祝您健康！</view>
+                </view>
+                <view class="info-content">
+                    <view class="info-content-title">汇总分析</view>
+                    <view class="content-info info-content-content">
+                        <text>1、本次评估结果您的身体状况 </text>
+                        <text style="color:{{stateColor}}">良好</text>
+                        <text>， 整体状况较同年龄段好于 </text>
+                        <text style="color:{{stateColor}}">{{stateScore}}%</text>
+                        <text>的人。</text>
+                    </view>
+                    <view class="content-info info-content-content">
+                        <view wx:if="{{isShare||lightItems&&lightItems.length>0}}">
+                2、本次检测请您一般关注： <text style="color: #f39800;font-weight:bold">{{lightItemsNames}}</text> 的指标问题。
+              </view>
+                        <view wx:else>2、本次检测您无需要一般关注的指标。</view>
+                    </view>
+                    <view class="content-info info-content-content">
+                        <view wx:if="{{isShare||seriousItems&&seriousItems.length>0||moderateItems&&moderateItems.length>0}}">
+              3、根据您本次检测结果，给您的专属健康建议重点关注： <text style="color:#f93c02;font-weight:bold">
+                                <block wx:if="{{isShare||seriousItems&&seriousItems.length>0}}">{{seriousItemsNames}},</block>
+                                <block wx:if="{{isShare||moderateItems&&moderateItems.length>0}}">{{moderateItemsNames}}</block>
+                            </text>的指标问题
+            </view>
+                        <view wx:else>3、本次检测您无需要重点关注的指标</view>
+                        <view>
+                            <text>，请点击</text>
+                            <navigator class="nav-details" hoverClass="other-navigator-hover" openType="navigate" url="../../checkresult/miniDetails?historyId={{historyId}}&datatime={{datatime}}&nexttime={{nexttime}}&score={{stateScore}}">查看详情>></navigator>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="welcome-footer">
+                <view bindtap="getDetails" class="footer-content">
+                    <image class="connect-gb-image" mode="aspectFit" src="image/watch_details.png"></image>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -10,5 +10,9 @@ Page({
   onLoad: function () {
 
   },
-
+  next: function () {
+    wx.reLaunch({
+      url: "/pages/bluetooth/sreachbluetooth1"
+    });
+  },
 })

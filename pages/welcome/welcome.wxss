@@ -4,7 +4,7 @@
     font-family: "Microsoft YaHei";
     font-size: 30rpx;
     color: #343434;
-    height: 30vh;
+    height: 25vh;
     background: #ffffff;
 }
 .welcome-header {
@@ -15,8 +15,6 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    
-    
 }
 .header-bg {
     height: 25vh;
@@ -30,7 +28,7 @@
     display: flex;
     flex-direction: column;
     background-color: #edfcff;
-    height: 5vh;
+    height: 0px;
     
 }
 .header-bottom {

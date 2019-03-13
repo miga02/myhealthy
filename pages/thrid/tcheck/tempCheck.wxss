@@ -1,0 +1,239 @@
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    font-family: "Microsoft YaHei";
+    font-size: 30rpx;
+    color: #343434;
+    width: 100vw;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+
+.welcome-header {
+    height: 335rpx;
+    width: 100vw;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 0rpx 8rpx 0rpx 0rpx rgba(230,230,230,1);
+}
+
+.header-bg {
+    height: 256rpx;
+    width: 100vw;
+    float: left;
+}
+
+.header-bottom {
+    height: 72rpx;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background: rgba(255,255,255,0.4);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.header-bottom-left {
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 32rpx;
+}
+
+.header-bottom-left text {
+    margin: 0 16rpx;
+}
+
+.header-icon {
+    height: 48rpx;
+    width: 48rpx;
+    border-radius: 50%;
+}
+
+.header-bottom-right {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 16rpx;
+}
+
+.header-bottom-right text {
+    margin: 0 16rpx;
+}
+
+.content {
+    margin-top: 8rpx;
+    background: #f0f1f3;
+    background: #f0f1f3;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-content {
+    margin-top: 8rpx;
+    background: #f0f1f3;
+    display: flex;
+    flex-direction: column;
+    padding: 16rpx 48rpx;
+}
+
+.content-title {
+    background: #033fab;
+    padding: 24rpx;
+    font-weight: bold;
+    border-radius: 12rpx;
+    color: white;
+    font-size: 32rpx;
+}
+
+.content-one {
+    text-indent: 48rpx;
+    padding: 24rpx;
+}
+
+.content-two {
+    text-indent: 48rpx;
+    padding: 24rpx;
+}
+
+.welcome-footer {
+    width: 100vw;
+    height: 320rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f1f3;
+    flex-direction: column;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.connect-gb-image {
+    width: 497rpx;
+    height: 110rpx;
+    order: 10;
+    z-index: 1;
+    display: block;
+}
+
+.cancel {
+    margin-top: 36rpx;
+    width: 256rpx;
+    height: 72rpx;
+    margin-bottom: 64rpx;
+}
+
+#mask-layer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+#question-layer {
+    width: 700rpx;
+    height: 1000rpx;
+    background-color: #ffffff;
+    margin: 30rpx auto;
+    overflow-y: scroll;
+    border-radius: 10rpx;
+}
+
+#top-img-wrap {
+    width: 100%;
+    height: 160rpx;
+    margin: 0 auto;
+}
+
+#top-img-wrap image {
+    width: 100%;
+    height: 100%;
+}
+
+#sign-title {
+    display: inline-block;
+    width: 100%;
+    margin-top: 20rpx;
+    text-align: center;
+    color: #23AD9F;
+}
+
+#question-wrap {
+    width: 680rpx;
+    margin: 20rpx auto;
+}
+
+.question-list-wrap {
+    width: 100%;
+    border-top: 2rpx solid #23AD9F;
+    box-sizing: border-box;
+}
+
+.qusetion-title-wrap {
+    width: 100%;
+    height: 70rpx;
+    margin-top: 20rpx;
+}
+
+.qusetion-title {
+    display: inline-block;
+    width: 300rpx;
+    height: 70rpx;
+    background: linear-gradient(#56E9D6,#0EB29D);
+    box-shadow: 0 5rpx 5rpx #037364;
+    line-height: 70rpx;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 10rpx;
+    color: #ffffff;
+}
+
+.question-list {
+    color: #727171;
+}
+
+.question-text {
+    line-height: 58rpx;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding-left: 10rpx;
+}
+
+.check-style {
+    display: inline-block;
+    width: 48rpx;
+    height: 48rpx;
+    vertical-align: middle;
+}
+
+.check-style>image {
+    width: 48rpx;
+    height: 48rpx;
+}
+
+#btn-submit {
+    width: 500rpx;
+    height: 80rpx;
+    margin: 20rpx auto;
+    background: linear-gradient(#56E9D6,#0EB29D);
+    box-shadow: 0 5rpx 5rpx #037364;
+    line-height: 80rpx;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 10rpx;
+    color: #ffffff;
+}
